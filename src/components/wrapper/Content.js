@@ -1,22 +1,25 @@
 import React from 'react'
-import {Container, Header, Image} from 'semantic-ui-react' 
+import {Container, Header, Image, Tab} from 'semantic-ui-react' 
 
 class Content extends React.Component {
     render() {
+        const panes = [
+            { menuItem: 'Basics Element', render: () => <Tab.Pane>Tab 1 Content</Tab.Pane> },
+            { menuItem: 'Typography', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
+            { menuItem: 'Color Swatches', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+          ]
         return (
-            <Container text style={{ marginTop: '7em' }}>
-                    <Header as='h1'>Semantic UI React Fixed Template</Header>
-                    <p>This is a basic fixed menu template using fixed size containers.</p>
-                    <p>A text container is used for the main container, which is useful for single column layouts.</p>
-
-                    <Image src='/assets/images/wireframe/media-paragraph.png' style={{ marginTop: '2em' }} />
-                    <Image src='/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-                    <Image src='/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-                    <Image src='/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-                    <Image src='/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-                    <Image src='/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-                    <Image src='/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-            </Container>
+            <div>
+                <Container text style={{ marginTop: '7em' }}>
+                    <Header as='h1'>Material Design</Header>
+                    <p>Material Design is a design language developed in 2014 by Google.</p>
+                    <p>Expanding upon the "card" motifs that debuted in Google Now, Material Design makes more liberal use of grid-based layouts, responsive animations and transitions, padding, and depth effects such as lighting and shadows.</p>
+                    <br/>
+                </Container>
+                <Container>
+                    <Tab menu={{ fluid: true, vertical: true }} menuPosition='left' panes={panes} />
+                </Container>
+            </div>
         )
     }
 }

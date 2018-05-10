@@ -9,10 +9,10 @@ class Headers extends React.Component {
                         <Menu.Item as='a' header>
                         <Image
                             size='mini'
-                            src='/logo.png'
+                            src='/design.png'
                             style={{ marginRight: '1.5em' }}
                         />
-                        Project Name
+                        Material Design
                         </Menu.Item>
                         <Menu.Item as='a'>Home</Menu.Item>
 
