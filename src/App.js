@@ -5,7 +5,7 @@ import Favicon from 'react-favicon';
 
 
 const App = () => <div>
-    <Favicon url="http://oflisback.github.io/react-favicon/public/img/github.ico"/>
+    <Favicon url="https://raw.githubusercontent.com/syahrulrmdhon/material-design/master/public/favicon2.ico"/>
     <Route path='/' exact component={Material}/>
 </div>
 
