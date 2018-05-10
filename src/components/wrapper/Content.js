@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Header, Image, Tab} from 'semantic-ui-react' 
+import {Container, Header, Tab} from 'semantic-ui-react' 
 
 class Content extends React.Component {
     render() {
