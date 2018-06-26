@@ -50,7 +50,7 @@ class Footer extends React.Component {
                         <Image
                         centered
                         size='mini'
-                        src='/design.png'
+                        src='design.png'
                         />
                         <List horizontal inverted divided link>
                         <List.Item as='a' href='#'>Site Map</List.Item>
