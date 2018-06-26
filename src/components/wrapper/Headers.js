@@ -9,7 +9,7 @@ class Headers extends React.Component {
                         <Menu.Item as='a' header>
                         <Image
                             size='mini'
-                            src='/design.png'
+                            src='design.png'
                             style={{ marginRight: '1.5em' }}
                         />
                         Material Design
